@@ -1,4 +1,7 @@
 {
+  "0": "w",
+  "1": "a",
+  "2": "t",
   "name": "wast",
   "rules": {
     "ROOT": {
@@ -708,7 +711,7 @@
                   },
                   {
                     "type": "PATTERN",
-                    "value": "u{[0-9a-fA-F]+}"
+                    "value": "u\\{[0-9a-fA-F]+\\}"
                   }
                 ]
               }
@@ -5484,4 +5487,3 @@
   "inline": [],
   "supertypes": []
 }
-

@@ -100,7 +100,7 @@ module.exports = grammar({
     elem_list: $ => choice(seq($.elem_kind, repeat($.index)), seq($.ref_type, repeat($.elem_expr))),
 
     escape_sequence: $ =>
-      imm(repeat1(seq(imm("\\"), imm(choice(/[^u0-9a-fA-F]/, /[0-9a-fA-F]{2}/, /u{[0-9a-fA-F]+}/))))),
+      imm(repeat1(seq(imm("\\"), imm(choice(/[^u0-9a-fA-F]/, /[0-9a-fA-F]{2}/, /u\{[0-9a-fA-F]+\}/))))),
 
     export: $ => seq("(", "export", $.name, ")"),
 
